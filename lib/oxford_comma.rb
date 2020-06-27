@@ -1,5 +1,10 @@
 def oxford_comma(array) 
   if array.length == 1 
-    array.index(0) array.index(1)
-  end
+    array.join
+  elsif array.length == 2 
+    array.join(" and ")
+  else 
+    comma = array.last 
+    array.pop 
+    array.join()
 end
